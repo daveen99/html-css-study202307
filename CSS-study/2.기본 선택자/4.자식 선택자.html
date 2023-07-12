@@ -6,21 +6,26 @@
     <title>Document</title>
 
     <style>
-        li.orange {
-            color: orange;;
+        /* 자식 선택자.     맨 뒤의 선택자가 타겟이며 앞은 조건이다 */
+        /* div의 직속자식인 .orange에게 */
+        div > .orange {
+            background: orange;
+        }
+        /* body의 자식인 div의 자식인 ul의 자식인 li에게 */
+        body > div > ul > li {
+            color: red;
         }
 
-        li#apple.reverse.center {
-            color: red;
-            font-weight: 700;
-        }
-        h1.yellow.low#change.primary {
-            background: greenyellow;
+        #circle>h1.title>.left.low>#banana {
+
         }
     </style>
 
 </head>
 <body>
+
+
+
     <h1 id="change" class="yellow low primary">안녕하세요</h1>
 
 
